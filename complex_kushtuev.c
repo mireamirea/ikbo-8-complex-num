@@ -86,7 +86,7 @@ int main(void) {
 	printf("%.2f\n", mult->Re);
 	printf("%.2f\n", mult->Im);
 
-	getchar();
-	getchar();
+	printf("Valera psina@@@\n");
+	
 	return 0;
 }
