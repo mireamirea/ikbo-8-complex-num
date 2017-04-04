@@ -38,7 +38,7 @@ void Cprint(Cnum_t t) {
 		print("z = %f", t.Re);
 }
 
-void Cdiv(Cnum_t* a, Cnum_t* b) {
+Cnum_t* Cdiv(Cnum_t* a, Cnum_t* b) {
 	Cnum_t  *t = (Cnum_t*)malloc(sizeof(Cnum_t*));
 	Cnum_t  *r = (Cnum_t*)malloc(sizeof(Cnum_t*));	
 	Cnum_t  *k = (Cnum_t*)malloc(sizeof(Cnum_t*));
@@ -47,4 +47,5 @@ void Cdiv(Cnum_t* a, Cnum_t* b) {
 	t = Cmulti(*a, *r);
 	k =	Cmulti(*b, *r);
 	v = t->Re / k->Re + t->Im / k->Im;
+	return v;
 }
