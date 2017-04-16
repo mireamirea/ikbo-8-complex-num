@@ -49,3 +49,12 @@ Cnum_t* Cdiv(Cnum_t* a, Cnum_t* b) {
 	v = t->Re / k->Re + t->Im / k->Im;
 	return v;
 }
+
+int main(){
+	/*тест вывода*/
+	Cnum_t *test1;
+	test1-> Re = 2;
+	test1-> Im = 3;
+	Cprint(*test1);
+	return 0;
+}
